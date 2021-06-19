@@ -40,10 +40,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        init();
+        setConfiguration();
     }
 
-    public void init() {
+    public void setConfiguration() {
         btnSearch = findViewById(R.id.btnBuscar);
         txtId = findViewById(R.id.txtId);
         queue = Volley.newRequestQueue(this);
